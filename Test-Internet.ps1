@@ -57,9 +57,15 @@ Function Get-TimeDateStamp {
     Return $TimeDateStamp
 }
 
-#IP Address of the PowerSwitch that is attached to the Modem / Router
-#Make SURE that your WEMO(s) have fixed IPs
-#This is a Hash Table, please keep it in that format
+<#
+IP Address of the PowerSwitch that is attached to the Modem / Router
+Make SURE that your WEMO(s) have fixed IPs
+
+This is a Hash Table, please keep it in that format.  At some point, I am planning on finding a way to reboot
+the Modem AND Router.  After the Router is turned off, connection is lost to the WEMO, so I cannot turn it back ON. 
+I am hoping to find a way for the switch to turn back on automatically after it is switched off.
+Currently, WEMO has a way to automatically turn OFF after being turned ON for X minutes.... could that be inverted? HMMM
+#>
 $PowerSwitchIP = @{
 "Modem" = "192.168.1.80"
 }
