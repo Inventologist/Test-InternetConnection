@@ -37,8 +37,14 @@
 
     I've found that the list of websites is pretty stable.  I tested it for 5 days straight with a 30 second interval, and nothing freaked out.  I think I had 1 SITE failure in a single cycle.
 
-    .LINK
+    .NOTES
+    Version:        1.5
+    Author:         <Name>
+    Creation Date:  <Date>
+  
+    Purpose/Change: Initial script development.LINK
     https://github.com/Inventologist/Test-Internet
+    
     #>
 
 #$Global:ProgressPreference = 'SilentlyContinue' is used to stop the progress bars from coming up
